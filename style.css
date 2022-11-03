@@ -3,7 +3,7 @@ header{
   background-color: #000000;
   margin: 0;
 }
-ol{
+header>ol{
   border: 1px solid #757575;
   background-color:#fff;
   color: #000;
