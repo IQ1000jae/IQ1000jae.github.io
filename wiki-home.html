@@ -9,5 +9,22 @@
     <header>
       <h1> <i class="fad fa-rocket-launch"></i> Rocket Wiki <input type="search"> <i class="fad fa-search"></i> </h1>
     </header>
+    <div id="wrap">
+      <div class="element">
+        <script>
+          const input=document.querySelector("input[type='search']");
+          while(true){
+            if(!(input.value.search("침해")==-1)){
+              document.write(`
+              <div><h1><i style="color:#d9d9d9;">검색 결과 없음</i></h1></div>`);
+            }else if(!(input.value.search("로켓몬")==-1)){
+               document.write(`
+               <div>
+                 <h3><a href="https://iq1000jae.github.io/wiki-rocket.html">로켓몬 - 로켓위키</a></h3>
+               </div>`); 
+            }
+        </script>
+      </div>
+    </div>
   </body>
 </html>
