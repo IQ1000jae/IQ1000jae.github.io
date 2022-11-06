@@ -7,13 +7,14 @@
   </head>
   <body>
     <header>
-      <h1> <i class="fad fa-rocket-launch"></i> Rocket Wiki <input type="search"> <i class="fad fa-search"></i> </h1>
+      <h1> <i class="fad fa-rocket-launch"></i> Rocket Wiki <input type="search"> <i class="fad fa-search" onclick="search()"></i> </h1>
     </header>
     <div id="wrap">
       <div class="element">
         <script>
           const input=document.querySelector("input[type='search']");
-          while(true){
+          const icon=document.querySelector("h1 i:nth-child(2)");
+          function search(){
             if(!(input.value.search("침해")==-1)){
               document.write(`
               <div><h1><i style="color:#d9d9d9;">검색 결과 없음</i></h1></div>`);
@@ -23,7 +24,20 @@
                  <h3><a href="https://iq1000jae.github.io/wiki-rocket.html">로켓몬 - 로켓위키</a></h3>
                </div>`); 
             }
+          }
         </script>
+        <noscript>
+          <a href="https://www.google.com/intl/ko_kr/chrome/">클릭!</a><br>
+          <a href="https://www.google.com/intl/en/chrome/">click!</a><br>
+          <a href="https://www.google.com/intl/in/chrome/">klik!</a><br>
+          <a href="https://www.google.com/intl/jp/chrome/"><ruby>クリック!<rt>くりっく</rt></ruby></a><br>
+          <a href="https://www.google.com/intl/ar/chrome/">انقر</a><br>
+          <a href="https://www.google.com/intl/ru/chrome/">Нажмите!</a><br>
+          <a href="https://www.google.com/intl/fr/chrome/">Cliquez!</a><br>
+          <a href="https://www.google.com/intl/vi/chrome/">Nhấp vào!</a><br>
+          <a href="https://www.google.com/intl/uk/chrome/">Натисніть!</a><br>
+          외국어 번역:<a href="https://www.google.com/search?q=%EB%B2%88%EC%97%AD%EA%B8%B0&oq=qjs&aqs=chrome.1.69i57j0i131i433i512j0i433i512l2j0i131i433i512j46i131i433i512j46i3i512j0i395i512j0i395i433i512j46i199i395i465i512.3932j1j7&sourceid=chrome&ie=UTF-8">번역기</a><br>
+        </noscript>
       </div>
     </div>
   </body>
