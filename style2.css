@@ -1,1 +1,6 @@
-
+a{
+  text-decoration-line:none;
+}
+header h1 a{
+  text-color:#ffffff;
+}
