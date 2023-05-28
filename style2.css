@@ -4,3 +4,13 @@ a{
 header h1 a{
   text-color:#ffffff;
 }
+header{
+  color: #ffffff;
+  background-color: #000000;
+  margin: 0;
+}
+header>ol{
+  border: 1px solid #757575;
+  background-color:#fff;
+  color: #000;
+}
